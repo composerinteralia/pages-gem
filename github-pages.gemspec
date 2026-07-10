@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.executables           = all_files.grep(%r{^bin/}) { |f| File.basename(f) }
 
   GitHubPages::Dependencies.gems.each do |gem, version|
-    s.add_dependency(gem, "= #{version}")
+    s.add_dependency(gem, "#{version}")
   end
 
   s.add_dependency("mercenary", "~> 0.3")
